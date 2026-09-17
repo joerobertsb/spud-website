@@ -1,0 +1,144 @@
+.outerFrame {
+  background: linear-gradient(to bottom, #d4d4d4, #a8a8a8);
+  border: 1px solid #888;
+  padding: 4px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.darkPlayer {
+  background: #1a1a1a;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.darkPlayer :global(.rhap_main) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.darkPlayer :global(.rhap_controls-section) {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.darkPlayer :global(.rhap_progress-section) {
+  display: none;
+}
+
+.darkPlayer :global(.rhap_button-clear) {
+  overflow: visible;
+}
+
+.darkPlayer :global(.rhap_play-pause-button) {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.darkPlayer :global(.rhap_main-controls-button) {
+  overflow: visible;
+}
+
+.playButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #e8e8e8 0%, #b0b0b0 50%, #888888 100%);
+  border: 1px solid #666;
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.6),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.playButton:active {
+  background: linear-gradient(to bottom, #888888 0%, #b0b0b0 50%, #e8e8e8 100%);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.4),
+    inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.playTriangle {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 14px solid #1a1a1a;
+  margin-left: 4px;
+}
+
+.pauseBars {
+  display: flex;
+  gap: 4px;
+}
+
+.pauseBars span {
+  width: 5px;
+  height: 16px;
+  background: #1a1a1a;
+  display: block;
+}
+
+.trackInfo {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.trackTitle {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trackArtist {
+  color: #aaa;
+  font-size: 13px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.equalizer {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 20px;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+@keyframes eqBounce {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+.equalizer span {
+  width: 4px;
+  height: 100%;
+  background: #4ade80;
+  display: block;
+  transform-origin: bottom;
+  animation: eqBounce 0.8s ease-in-out infinite;
+}
+
+.equalizer span:nth-child(1) { animation-delay: 0s; }
+.equalizer span:nth-child(2) { animation-delay: 0.2s; }
+.equalizer span:nth-child(3) { animation-delay: 0.4s; }
+.equalizer span:nth-child(4) { animation-delay: 0.1s; }
+
+.equalizer.paused span {
+  animation-play-state: paused;
+  transform: scaleY(0.3);
+}

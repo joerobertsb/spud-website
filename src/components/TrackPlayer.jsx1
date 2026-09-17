@@ -1,0 +1,102 @@
+"use client";
+
+import { useState, useRef, useEffect } from "react";
+import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import styles from "./TrackPlayer.module.css";
+
+export default function TrackPlayer({ src }) {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [duration, setDuration] = useState(null);
+  const playerRef = useRef(null);
+
+  useEffect(() => {
+    const audioEl = playerRef.current?.audio?.current;
+    if (!audioEl) return;
+
+    const handleLoadedMetadata = () => {
+      setDuration(audioEl.duration);
+    };
+
+    audioEl.addEventListener("loadedmetadata", handleLoadedMetadata);
+
+    if (audioEl.duration && !isNaN(audioEl.duration)) {
+      setDuration(audioEl.duration);
+    }
+
+    return () => {
+      audioEl.removeEventListener("loadedmetadata", handleLoadedMetadata);
+    };
+  }, [src]);
+
+  function formatTime(seconds) {
+    if (!seconds || isNaN(seconds)) return "--:--";
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, "0")}`;
+  }
+
+  return (
+    <div>
+      <AudioPlayer
+        ref={playerRef}
+        src={src}
+        showJumpControls={false}
+        layout="horizontal"
+        className={styles.darkPlayer}
+        customControlsSection={[
+          <div
+            key="equalizer"
+            className={`${styles.equalizer} ${!isPlaying ? styles.paused : ""}`}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>,
+          RHAP_UI.MAIN_CONTROLS,
+          RHAP_UI.VOLUME_CONTROLS,
+        ]}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+        
+        customProgressBarSection={[
+          RHAP_UI.CURRENT_TIME,
+          RHAP_UI.PROGRESS_BAR,
+          <div key="custom-duration" className={styles.durationText}>
+            {formatTime(duration)}
+          </div>,
+        ]}
+        customIcons={{
+          play: (
+            <div
+              className={styles.playButton}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div className={styles.playTriangle}></div>
+            </div>
+          ),
+          pause: (
+            <div
+              className={styles.playButton}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div className={styles.pauseBars}>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          ),
+        }}
+      />
+    </div>
+  );
+}
