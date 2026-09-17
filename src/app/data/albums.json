@@ -7,8 +7,9 @@
     "tracks": [
       {
         "id": "album-1-track-1",
-        "title": "INTRO",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "title": "Record for Farthest Flighing Paper Airplane",
+        "cloudinaryName": "experiment.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.wav"
       }
     ]
   },
@@ -21,22 +22,26 @@
       {
         "id": "album-2-track-1",
         "title": "Intro",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "intro.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789668655/intro_take5.wav"
       },
       {
         "id": "album-2-track-2",
         "title": "Brian",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "brian.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789668741/brian-take6.wav"
       },
       {
         "id": "album-2-track-3",
         "title": "Alvin",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "alvin.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/alvin.wav"
       },
       {
         "id": "album-2-track-4",
         "title": "i=3",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "i_3.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789668704/i_3-take7.wav"
       }
     ]
   },
@@ -49,42 +54,50 @@
       {
         "id": "album-3-track-1",
         "title": "unknown",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "unknown.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430334/unknown.wav"
       },
       {
         "id": "album-3-track-2",
         "title": "Signal Radio",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "signalradio.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430455/pettingzoo_-_edit_2_-_louder.wav"
       },
       {
         "id": "album-3-track-3",
         "title": "backyard",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "backyard.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430355/backyard_-_edit_2.wav"
       },
       {
         "id": "album-3-track-4",
         "title": "Intermission",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "socko-end.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430254/socko-end.wav"
       },
       {
         "id": "album-3-track-5",
         "title": "Gibbons Expedition: Launch",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "gibbons1.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430394/thejourneytohell_-_EQaup3_-_1.wav"
       },
       {
         "id": "album-3-track-6",
         "title": "Gibbons Expedition: Shaking",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "gibbons2.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430260/gibbons2.wav"
       },
       {
         "id": "album-3-track-7",
         "title": "Gibbons Expedition: Contact",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "gibbons3.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430250/thejourneytohell_-_EQaup3_-_3.wav"
       },
       {
         "id": "album-3-track-8",
         "title": "Gibbons Expedition: The Prophecy Fulfilled",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "gibbons4.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430349/thejourneytohell_-_EQaup3_-_4.wav"
       }
     ]
   },
@@ -97,47 +110,56 @@
       {
         "id": "album-4-track-1",
         "title": "Overture - Welcome to this World, Socko",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "overture.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430521/overture.wav"
       },
       {
         "id": "album-4-track-2",
         "title": "Socko Gets a Bath",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "sockogetsabath.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430497/NEWsockoGetsABath.wav"
       },
       {
         "id": "album-4-track-3",
         "title": "Collar",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "collar.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430553/collar.wav"
       },
       {
         "id": "album-4-track-4",
         "title": "The Find - I",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "thefind1.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430478/newtrack4.wav"
       },
       {
         "id": "album-4-track-5",
         "title": "Bandaid (Livin' the Dream)",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "bandaid.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430483/livingthedream.wav"
       },
       {
         "id": "album-4-track-6",
         "title": "The Find - II",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "thefind2.wav",
+        "src": ""
       },
       {
         "id": "album-4-track-7",
         "title": "Socko Is",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "sockois.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430528/iam.wav"
       },
       {
         "id": "album-4-track-8",
         "title": "Love Theme to Socko",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "lovetheme.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430561/howardgreyhoundstation.wav"
       },
       {
         "id": "album-4-track-9",
         "title": "Socko chucked into the Aether, alive forever, forgotten by most",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "cloudinaryName": "sockchucked.wav",
+        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1789430555/sockocastoutintotheaetherthefinalsacrifice.wav"
       }
     ]
   }
