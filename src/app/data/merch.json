@@ -1,143 +1,67 @@
 [
   {
-    "id": 1,
-    "title": "Self-Titled (COMING SOON)",
-    "year": "2026",
-    "cover": "/SPUDCDCASEBONUS2-2.jpg",
-    "tracks": [
+    "id": "tshirt-graphic-1",
+    "name": "Dead Chimp Tee",
+    "category": "apparel",
+    "price": 25.00,
+    "description": "Standard fit cotton tee featuring Graphic 1 print on front.",
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "inStock": true,
+    "addOns": [
       {
-        "id": "album-1-track-1",
-        "title": "INTRO",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "id": "addon-sticker",
+        "name": "Add SPUD Sticker",
+        "price": 3.00
+      },
+      {
+        "id": "addon-patch",
+        "name": "Add Socko Woven Patch",
+        "price": 5.00
+      }
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "hex": "#000000",
+        "image": "https://res.cloudinary.com/klvjhgw5/image/upload/v1/spud_tee_graphic1_black.png"
+      },
+      {
+        "color": "White",
+        "hex": "#ffffff",
+        "image": "https://res.cloudinary.com/klvjhgw5/image/upload/v1/spud_tee_graphic1_white.png"
+      },
+      {
+        "color": "Heathers Gray",
+        "hex": "#888888",
+        "image": "https://res.cloudinary.com/klvjhgw5/image/upload/v1/spud_tee_graphic1_gray.png"
       }
     ]
   },
   {
-    "id": 2,
-    "title": "Live Set - 2024",
-    "year": "2025",
-    "cover": "/liveset.jpg",
-    "tracks": [
+    "id": "tshirt-graphic-2",
+    "name": "Oil Rig Tee",
+    "category": "apparel",
+    "price": 28.00,
+    "description": "Heavyweight cotton tee featuring Graphic 2 art.",
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "inStock": true,
+    "addOns": [
       {
-        "id": "album-2-track-1",
-        "title": "Intro",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-2-track-2",
-        "title": "Brian",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-2-track-3",
-        "title": "Alvin",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-2-track-4",
-        "title": "i=3",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "id": "addon-sticker",
+        "name": "Add Tour Sticker",
+        "price": 3.00
       }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Socko 2",
-    "year": "2022",
-    "cover": "/socko-minimal.png",
-    "tracks": [
+    ],
+    "variants": [
       {
-        "id": "album-3-track-1",
-        "title": "unknown",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "color": "Black",
+        "hex": "#000000",
+        "image": "https://res.cloudinary.com/klvjhgw5/image/upload/v1/spud_tee_graphic2_black.png"
       },
       {
-        "id": "album-3-track-2",
-        "title": "Signal Radio",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-3-track-3",
-        "title": "backyard",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-3-track-4",
-        "title": "Intermission",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-3-track-5",
-        "title": "Gibbons Expedition: Launch",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-3-track-6",
-        "title": "Gibbons Expedition: Shaking",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-3-track-7",
-        "title": "Gibbons Expedition: Contact",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-3-track-8",
-        "title": "Gibbons Expedition: The Prophecy Fulfilled",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Socko",
-    "year": "2020",
-    "cover": "/socko1.jpg",
-    "tracks": [
-      {
-        "id": "album-4-track-1",
-        "title": "Overture - Welcome to this World, Socko",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-4-track-2",
-        "title": "Socko Gets a Bath",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-4-track-3",
-        "title": "Collar",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-4-track-4",
-        "title": "The Find - I",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-4-track-5",
-        "title": "Bandaid (Livin' the Dream)",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-4-track-6",
-        "title": "The Find - II",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-4-track-7",
-        "title": "Socko Is",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-4-track-8",
-        "title": "Love Theme to Socko",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
-      },
-      {
-        "id": "album-4-track-9",
-        "title": "Socko chucked into the Aether, alive forever, forgotten by most",
-        "src": "https://res.cloudinary.com/klvjhgw5/video/upload/v1787769486/experiment.mp3"
+        "color": "Navy",
+        "hex": "#0a192f",
+        "image": "https://res.cloudinary.com/klvjhgw5/image/upload/v1/spud_tee_graphic2_navy.png"
       }
     ]
   }
