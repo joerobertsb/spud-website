@@ -1,27 +1,13 @@
-// src/app/(site)/layout.js
-import SideNav from "@/components/SideNav";
+// src/components/SideNav.jsx
+import Link from "next/link";
 
-export default function InnerLayout({ children }) {
+export default function SideNav() {
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "200px 1fr", // Identical 200px reserved sidebar
-        gap: "2rem",
-        maxWidth: "1100px",
-        margin: "0 auto",
-        padding: "2rem 1rem",
-      }}
-    >
-      {/* Left Column: Persistent Navigation */}
-      <aside style={{ minWidth: "160px" }}>
-        <SideNav />
-      </aside>
-
-      {/* Right Column: Dynamic Route Content */}
-      <main style={{ width: "100%" }}>
-        {children}
-      </main>
-    </div>
+    <nav style={{ display: "flex", flexDirection: "column", gap: "1rem", fontFamily: "monospace" }}>
+      <Link href="/" style={{ color: "#fff", textDecoration: "none" }}>Music -></Link>
+      <Link href="/merch" style={{ color: "#fff", textDecoration: "none" }}>Merch</Link>
+      <Link href="/shows" style={{ color: "#fff", textDecoration: "none" }}>Shows</Link>
+      <Link href="/contact" style={{ color: "#fff", textDecoration: "none" }}>Contact</Link>
+    </nav>
   );
 }

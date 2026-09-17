@@ -2,11 +2,11 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "spud",
-  description: "Official spud Website",
+  title: "SPUD",
+  description: "Official SPUD Website",
 };
 
-export default function SiteLayout({ children }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body

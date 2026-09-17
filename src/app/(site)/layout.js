@@ -1,20 +1,28 @@
-import Link from "next/link";
-import Image from "next/image";
 import SideNav from "@/components/SideNav";
 import DynamicJumbotron from "@/components/DynamicJumbotron";
 
 export default function InnerLayout({ children }) {
   return (
-    <div>
-      {/* Persistent Banner */}
+    <div style={{ minHeight: "100vh", backgroundColor: "#0a0a0a", color: "#ffffff" }}>
+      {/* 1. Header Banner */}
       <DynamicJumbotron />
 
-      {/* Inner Content Body */}
-      <div style={{ position: "relative", width: "100%", maxWidth: "1200px", margin: "0 auto", paddingTop: "2rem" }}>
-        <div style={{ position: "absolute", left: "2rem", top: "2rem", zIndex: 10 }}>
+      {/* 2. Grid Container for Sidebar + Page Content */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "200px 1fr",
+          gap: "2rem",
+          maxWidth: "1100px",
+          margin: "0 auto",
+          padding: "2rem 1rem",
+        }}
+      >
+        <aside style={{ minWidth: "160px" }}>
           <SideNav />
-        </div>
-        <main style={{ padding: "0 2rem", maxWidth: "850px", margin: "0 auto" }}>
+        </aside>
+
+        <main style={{ width: "100%" }}>
           {children}
         </main>
       </div>
