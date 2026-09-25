@@ -3,7 +3,7 @@
     "id": "tshirt-graphic-1",
     "name": "Dead Chimp Tee",
     "category": "apparel",
-    "price": 25.00,
+    "price": 20.00,
     "description": "Standard fit cotton tee featuring Graphic 1 print on front.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
     "inStock": true,
@@ -11,11 +11,13 @@
       {
         "id": "addon-sticker",
         "name": "Add SPUD Sticker",
+        "image": "https://res.cloudinary.com/klvjhgw5/image/upload/v1/spud_tee_graphic1_black.png",
         "price": 3.00
       },
       {
         "id": "addon-patch",
         "name": "Add Socko Woven Patch",
+        "image": "https://res.cloudinary.com/klvjhgw5/image/upload/v1/spud_tee_graphic1_black.png",
         "price": 5.00
       }
     ],
@@ -41,7 +43,7 @@
     "id": "tshirt-graphic-2",
     "name": "Oil Rig Tee",
     "category": "apparel",
-    "price": 28.00,
+    "price": 20.00,
     "description": "Heavyweight cotton tee featuring Graphic 2 art.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
     "inStock": true,

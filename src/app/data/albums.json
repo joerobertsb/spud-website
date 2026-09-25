@@ -4,6 +4,8 @@
     "title": "Self-Titled (COMING SOON)",
     "year": "2026",
     "cover": "/SPUDCDCASEBONUS2-2.jpg",
+    "previewStartTime": 0,
+    "previewTrackIndex": 0,
     "tracks": [
       {
         "id": "album-1-track-1",
@@ -18,6 +20,8 @@
     "title": "Live Set - 2024",
     "year": "2025",
     "cover": "/liveset.jpg",
+    "previewStartTime": 250,
+    "previewTrackIndex": 3,
     "tracks": [
       {
         "id": "album-2-track-1",
@@ -50,6 +54,8 @@
     "title": "Socko 2",
     "year": "2022",
     "cover": "/socko-minimal.png",
+    "previewStartTime": 145,
+    "previewTrackIndex": 1,
     "tracks": [
       {
         "id": "album-3-track-1",
@@ -106,6 +112,8 @@
     "title": "Socko",
     "year": "2020",
     "cover": "/socko1.jpg",
+    "previewStartTime": 150,
+    "previewTrackIndex": 6,
     "tracks": [
       {
         "id": "album-4-track-1",
