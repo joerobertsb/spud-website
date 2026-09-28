@@ -1,13 +1,13 @@
 // src/app/(site)/merch/page.js
 import Link from "next/link";
 
-export default function ShowsPage() {
+export default function ContactPage() {
 
   const shows = [];
 
   return (
     <nav style={{ display: "flex", flexDirection: "column", gap: "1rem", fontFamily: "monospace" }}>
-      COMING SOON XD
+        COMING SOON :P
       {shows.map((show) => {
         const isActive =
           show.href === "/"

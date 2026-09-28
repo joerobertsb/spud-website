@@ -1,0 +1,35 @@
+.wrapper {
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+.aside {
+  min-width: 160px;
+}
+
+@media (max-width: 768px) {
+  .aside {
+    min-width: unset;
+  }
+}
+
+.main {
+  width: 100%;
+}

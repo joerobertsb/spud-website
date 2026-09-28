@@ -21,6 +21,9 @@ export default function SideNav() {
         flexDirection: "column",
         gap: "1rem",
         fontFamily: "monospace",
+        padding: "1rem 1rem",
+        textAlign: "center",
+        backgroundColor: "black"
       }}
     >
       {links.map((link) => {

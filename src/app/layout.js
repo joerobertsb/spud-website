@@ -2,8 +2,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "SPUD",
-  description: "Official SPUD Website",
+  title: "spud",
+  description: "spud website",
 };
 
 export default function RootLayout({ children }) {

@@ -142,3 +142,35 @@
   animation-play-state: paused;
   transform: scaleY(0.3);
 }
+
+@media (max-width: 480px) {
+  .darkPlayer :global(.rhap_main) {
+    gap: 8px;
+  }
+
+  .darkPlayer :global(.rhap_controls-section) {
+    gap: 8px;
+  }
+
+  .darkPlayer :global(.rhap_volume-controls) {
+    min-width: 60px;
+  }
+
+  .trackTitle {
+    font-size: 0.85rem;
+  }
+
+  .trackArtist {
+    font-size: 0.75rem;
+  }
+
+  .playButton {
+    width: 38px;
+    height: 38px;
+  }
+
+  .darkPlayer :global(.rhap_play-pause-button) {
+    width: 38px;
+    height: 38px;
+  }
+}
