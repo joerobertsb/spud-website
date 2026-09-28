@@ -1,17 +1,10 @@
-// src/app/(site)/page.js
 import AlbumCover from "@/components/AlbumCover";
 import albumsData from "@/app/data/albums.json";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
-        gap: "2rem",
-        width: "100%",
-      }}
-    >
+    <div className={styles.albumGrid}>
       {albumsData.map((album) => (
         <AlbumCover key={album.id} album={album} />
       ))}

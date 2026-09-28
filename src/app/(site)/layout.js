@@ -1,30 +1,18 @@
 import SideNav from "@/components/SideNav";
 import DynamicJumbotron from "@/components/DynamicJumbotron";
+import styles from "./layout.module.css";
 
 export default function InnerLayout({ children }) {
   return (
-    <div style={{ minHeight: "100vh", backgroundColor: "#0a0a0a", color: "#ffffff" }}>
-      {/* 1. Header Banner */}
+    <div className={styles.wrapper}>
       <DynamicJumbotron />
 
-      {/* 2. Grid Container for Sidebar + Page Content */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "200px 1fr",
-          gap: "2rem",
-          maxWidth: "1100px",
-          margin: "0 auto",
-          padding: "2rem 1rem",
-        }}
-      >
-        <aside style={{ minWidth: "160px" }}>
+      <div className={styles.grid}>
+        <aside className={styles.aside}>
           <SideNav />
         </aside>
 
-        <main style={{ width: "100%" }}>
-          {children}
-        </main>
+        <main className={styles.main}>{children}</main>
       </div>
     </div>
   );

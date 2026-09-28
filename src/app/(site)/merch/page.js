@@ -5,6 +5,7 @@ import merchData from "@/app/data/merch.json"; // Update to your data source pat
 export default function MerchPage() {
   return (
     <div>
+      EXCUSE THE MESS, WIP!
       <div
         style={{
           display: "grid",

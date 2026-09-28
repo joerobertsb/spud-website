@@ -3,11 +3,14 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./DynamicJumbotron.module.css";
 
-export default function DynamicJumbotron() {
+export default function DynamicJumbotron({ animate = false }) {
   const canvasRef = useRef(null);
 
   useEffect(() => {
+    if (!animate) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
@@ -72,29 +75,10 @@ export default function DynamicJumbotron() {
       window.removeEventListener("resize", resizeCanvas);
       cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [animate]);
 
   return (
-    <div
-      style={{
-        position: "relative",
-        width: "100%",
-        height: "300px",
-        overflow: "hidden",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#000",
-      }}
-    >
-      <Image
-        src="/LUN-A.jpg"
-        alt="SPUD Banner Background"
-        fill
-        style={{ objectFit: "cover", objectPosition: "center" }}
-        priority
-      />
-
+    <div className={styles.header}>
       <div style={{ position: "relative", zIndex: 10 }}>
         <Link href="/">
           <Image
@@ -102,24 +86,27 @@ export default function DynamicJumbotron() {
             alt="SPUD Logo"
             width={220}
             height={80}
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: "contain", width: "auto", height: "auto", maxWidth: "160px" }}
+            sizes="(max-width: 480px) 140px, 220px"
           />
         </Link>
       </div>
 
-      <canvas
-        ref={canvasRef}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: 5,
-          pointerEvents: "none",
-          background: "transparent",
-        }}
-      />
+      {animate && (
+        <canvas
+          ref={canvasRef}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 5,
+            pointerEvents: "none",
+            background: "transparent",
+          }}
+        />
+      )}
     </div>
   );
 }

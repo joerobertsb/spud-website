@@ -5,11 +5,12 @@ import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function AlbumCover({ album }) {
+export default function AlbumCover({ album, previewOnHover = false }) {
   const audioRef = useRef(null);
   const previewTrack = album.tracks?.[album.previewTrackIndex ?? 0];
 
   const handleMouseEnter = () => {
+    if (!previewOnHover) return;
     if (!previewTrack?.src) return;
 
     const audio = audioRef.current;
@@ -22,6 +23,8 @@ export default function AlbumCover({ album }) {
   };
 
   const handleMouseLeave = () => {
+    if (!previewOnHover) return;
+
     const audio = audioRef.current;
     if (!audio) return;
 
@@ -64,7 +67,7 @@ export default function AlbumCover({ album }) {
         {album.title}
       </p>
 
-      {previewTrack?.src && (
+      {previewOnHover && previewTrack?.src && (
         <audio ref={audioRef} src={previewTrack.src} preload="none" />
       )}
     </Link>
