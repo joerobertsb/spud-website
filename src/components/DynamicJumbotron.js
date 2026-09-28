@@ -86,7 +86,7 @@ export default function DynamicJumbotron({ animate = false }) {
             alt="SPUD Logo"
             width={220}
             height={80}
-            style={{ objectFit: "contain", width: "auto", height: "auto", maxWidth: "160px" }}
+            style={{ objectFit: "contain", width: "auto", height: "auto", maxWidth: "160px", backgroundColor: "black" }}
             sizes="(max-width: 480px) 140px, 220px"
           />
         </Link>
