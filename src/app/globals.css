@@ -2,14 +2,13 @@ html,
 body {
   background-color: var(--background);
   background-image: url('/LUN-A.jpg');
-  background-size: 25% 45%;
+  background-size: 35% auto;
   background-position: top left;
   background-repeat: repeat;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
 }
-
 body {
   color: var(--foreground);
   font-family: "Courier New", Courier, monospace;
@@ -18,4 +17,11 @@ body {
 html {
   scrollbar-gutter: stable;
   overflow-y: scroll;
+}
+
+@media (min-width: 769px) {
+  html {
+    scrollbar-gutter: stable;
+    overflow-y: scroll;
+  }
 }

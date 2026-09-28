@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  color: #ffffff;
+}
+
+.headerCard {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  background-color: #121212;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #222;
+}
+
+.cover {
+  flex-shrink: 0;
+}
+
+.info {
+  min-width: 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  font-family: monospace;
+  word-wrap: break-word;
+}
+
+.meta {
+  color: #989B99;
+  margin: 0 0 0.25rem 0;
+  font-family: monospace;
+}
+
+.metaLast {
+  color: #989B99;
+  margin: 0;
+  font-family: monospace;
+}
+
+@media (max-width: 600px) {
+  .headerCard {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

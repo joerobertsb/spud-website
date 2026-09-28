@@ -30,6 +30,13 @@
   }
 }
 
+.container {
+  width: 100%;
+  min-width: 0;
+  color: #ffffff;
+}
+
 .main {
   width: 100%;
+  min-width: 0;
 }

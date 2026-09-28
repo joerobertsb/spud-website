@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import styles from "./SideNav.module.css";
 
 export default function SideNav() {
   const pathname = usePathname();
@@ -15,31 +16,17 @@ export default function SideNav() {
   ];
 
   return (
-    <nav
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "1rem",
-        fontFamily: "monospace",
-        padding: "1rem 1rem",
-        textAlign: "center",
-        backgroundColor: "black"
-      }}
-    >
+    <nav className={styles.nav}>
       {links.map((link) => {
-        // Highlight Music for home "/" AND any album detail routes "/albums/..."
         const isActive =
           link.href === "/"
             ? pathname === "/" || pathname.startsWith("/albums")
             : pathname.startsWith(link.href);
         return (
-          <Link
-            key={link.href}
-            href={link.href}
-            style={{ color: "#fff", textDecoration: "none" }}
-          >
+          <Link key={link.href} href={link.href} className={styles.link}>
             {link.name}
-            {isActive && " ->"}
+            {isActive && " <|>"}
+            
           </Link>
         );
       })}
